@@ -14,11 +14,11 @@ h1{position: fixed; z-index:20; width: 100%; height:67px; line-height:30px; font
 h1 span{font-size: 15px;}
 
 /*Login*/
-.login-wrap{background:#102154;width:100%;height:100%; text-align:center; color: white}
+.login-wrap{background:#102154;width:100%;height:100%; text-align:center; color: white;font-family: "Arial Black",sans-serif}
 .login-con{padding-top: 50%;}
 .login-con h3{margin-bottom: 20px;font-size: 26px;}
-.login-con input{width:60%; display:block; margin:0 auto; height: 40px; line-height: 40px; margin-bottom: 20px;}
-.login-con button{width:60%;display:block; margin:0 auto; height: 40px; line-height:40px; border:none; background:#4946b1; color:#fff; border-radius:20px;}
+.login-con input{width:60%; display:block; margin:0 auto; height: 40px; line-height: 40px; margin-bottom: 20px;font-size: 14px;border-radius: 10px; border: none;padding-left: 10px}
+.login-con button{width:60%;display:block; margin:0 auto; height: 40px; line-height:40px; border:none; background:#4946b1; color:#fff; border-radius:20px;font-size: 17px;}
 
 /*Chatroom*/
 .chat-wrap{width: 100%; height: 100%;overflow-y:auto; background:#102154; text-align:center;}

@@ -4,7 +4,7 @@
           <div class="login-con">
             <h3>User Login</h3>
             <input type="text" placeholder="Enter Your User Name" id="loginName" v-model.trim="uname" @keyup.13="login">
-            <button class="login-btn" @click="login">Log in</button>
+            <button class="login-btn" @click="login">Log In</button>
           </div>
         </div>
 
