@@ -84,7 +84,7 @@ io.on('connection', function (socket) {
         	// username: username,
         	msgType: 0,
         	msgDate:  new Date(),
-        	message: 'System Message'+username+'left the group chat',
+        	message: username+' left the group chat',
 
         };
         io.sockets.emit('receiveMessage',resdata);

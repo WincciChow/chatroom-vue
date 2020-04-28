@@ -73,12 +73,11 @@ export default {
 
     /*receiveMessage*/
     vm.socket.on('receiveMessage',function(data){
-      console.log('Receive message from the server：',data)
+      console.log('Receive message from the server:',data)
       vm.msgList.push(data);
 
       window.scrollTo(0, document.getElementById('chat_con').scrollHeight);
 
-      //console.log('----',document.getElementById('chat_con').scrollHeight)
 
 
     })

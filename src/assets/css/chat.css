@@ -25,13 +25,13 @@ h1 span{font-size: 15px;}
 .chat-con{padding: 100px 0 70px; background:#102154;}
 .chat-con p{display:inline-block; padding:5px 10px; background:#999;border-radius:5px; color:#fff; margin:5px 0;}
 .bottom{position:fixed;bottom:0px; margin:0 5% 20px 5%; width:90%; height: 50px; background: #fff; border-radius: 25px;}
-.bottom input{width: 78%; height: 50px; line-height: 50px; float:left;border:none;border-radius: 25px;}
+.bottom input{width: 78%; height: 50px; line-height: 50px; float:left;border:none;border-radius: 25px;font-size: 15px;padding-left: 20px}
 .bottom button{width: 50px;height: 50px; float: right; border:none; background:#4946b1;color: #fff;border-radius: 25px;}
 .chat-item{width:90%; margin:20px 5% 0 5%;}
-.item-right .message{background: #fbdbc3;position: relative;}
+.item-right .message{background: #fbdbc3;position: relative;text-align: left;}
 .item-left .message{background: #fff; margin-top:20px; position: relative;}
 .item-left .img{margin-right:10px;}
-.item-left .uname{font-size:12px; left:50px; top:0;}
+.item-left .uname{font-size:12px; left:50px; top:0;color: white}
 .chat-item .message{max-width:60%;display:block; padding:10px;border-radius:5px; margin-right:10px; text-align: justify;}
 .chat-item .img{display:inline-block; width:40px; height:40px; background:url(../img/user.jpg) no-repeat; background-size:100% 100%;}
 
