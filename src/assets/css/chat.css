@@ -1,6 +1,10 @@
 /*Public*/
 *{padding:0; margin:0;}
-html,body{width:100%;height: 100%;}
+html,body{
+  width:100%;
+  height: 100%;
+  font-family: lucida sans unicode,Arial,sans-serif;
+}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*zoom:1}
 .cred{color:#f03e3e;}
