@@ -43,15 +43,14 @@ export default {
       inputMsg: '',
       socket: null,       //define socket
       isCheckin: false,
-      msgList:[],         //服务端返回的信息列表
+      msgList:[],         //message list from server
     }
   },
   mounted:function(){
     var vm = this;
-    /*建立socket连接，使用websocket协议，端口号是服务器端监听端口号*/
+    /*set up socket connection*/
     vm.socket = io('ws://localhost:8081');
 
-    /*登录成功*/
     vm.socket.on('loginSuccess',function(data){
       if(data.username === vm.uname){
         // vm.checkin(data)
@@ -61,19 +60,18 @@ export default {
       }
     })
 
-    /*登录失败*/
     vm.socket.on('loginFail',function(){
       alert('Name taken')
     })
 
-    /*监听人数*/
+    //number of users
     vm.socket.on('amountChange',function(data){
       vm.amount = data
     })
 
 
 
-    /*接收消息*/
+    /*receiveMessage*/
     vm.socket.on('receiveMessage',function(data){
       console.log('Receive message from the server：',data)
       vm.msgList.push(data);
@@ -85,12 +83,12 @@ export default {
 
     })
 
-    // /*新人加入提示*/
+    // /*new users*/
     // vm.socket.on('add',function(data){
     //   console.log(data)
     //
     // })
-    // /*退出群聊提示*/
+    // /*left chat notify*/
     // vm.socket.on('leave',function(name){
     //   console.log('Left===',name)
     //   if(name != null){
@@ -108,19 +106,19 @@ export default {
     }
   },
   methods:{
-    /*登录*/
+    /*login*/
     login:function(){
       var vm = this;
 
       if(vm.uname){
-        /*向服务端发送登录事件*/
+        /*sent login event to server*/
         vm.socket.emit('login',{username:vm.uname})
       }else{
         alert('Please Enter your name')
       }
     },
 
-    /*发送消息*/
+    /*send message*/
     sendMessage:function(){
       var vm = this;
 
