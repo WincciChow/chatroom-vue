@@ -20,7 +20,7 @@ export default {
   margin-top: 60px;
 }
 body{
-    background: #e7e7e7;
+    background: #102154;
     width: 100%;
     height: 100%;
     /*text-align: center;*/

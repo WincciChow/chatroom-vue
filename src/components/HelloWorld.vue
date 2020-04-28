@@ -9,7 +9,7 @@
         </div>
 
         <div class="chat-wrap " v-else>
-          <h1>Group Chat({{amount}}people in the room)</h1>
+          <h1>Group Chat<br><span> ({{amount}} people in room)</span></h1>
           <div class="chat-con clearfix" id="chat_con">
             <template v-for="item in msgList">
               <!-- {{item | json}} -->
